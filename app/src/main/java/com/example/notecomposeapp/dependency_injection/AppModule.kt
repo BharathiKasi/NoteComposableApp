@@ -6,6 +6,7 @@ import com.example.notecomposeapp.feature_note.data.data_source.NoteDatabase
 import com.example.notecomposeapp.feature_note.data.repository.NoteRepositoryImpl
 import com.example.notecomposeapp.feature_note.domain.repository.NoteRepository
 import com.example.notecomposeapp.feature_note.domain.use_case.DeleteNote
+import com.example.notecomposeapp.feature_note.domain.use_case.GetNote
 import com.example.notecomposeapp.feature_note.domain.use_case.GetNotes
 import com.example.notecomposeapp.feature_note.domain.use_case.NoteUseCases
 import com.example.notecomposeapp.feature_note.presentation.add_edit_note_screen.AddNote
@@ -37,6 +38,6 @@ class AppModule {
     @Provides
     @Singleton
     fun provideNoteUseCases(pNoteRepository: NoteRepository) : NoteUseCases{
-        return NoteUseCases(pDeleteNote = DeleteNote(pNoteRepository = pNoteRepository), pGetNotes = GetNotes(pNoteRepository = pNoteRepository), pAddNote = AddNote(pNoteRepository = pNoteRepository))
+        return NoteUseCases(pDeleteNote = DeleteNote(pNoteRepository = pNoteRepository), pGetNotes = GetNotes(pNoteRepository = pNoteRepository), pAddNote = AddNote(pNoteRepository = pNoteRepository), pGetNote = GetNote(pNoteRepository))
     }
 }

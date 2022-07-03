@@ -4,5 +4,6 @@ import com.example.notecomposeapp.feature_note.presentation.add_edit_note_screen
 
 data class NoteUseCases(val pDeleteNote: DeleteNote,
                         val pGetNotes: GetNotes,
-                        val pAddNote: AddNote
+                        val pAddNote: AddNote,
+                        val pGetNote:GetNote
 )
