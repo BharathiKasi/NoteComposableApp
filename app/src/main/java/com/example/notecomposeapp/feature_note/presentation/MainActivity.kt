@@ -1,4 +1,4 @@
-package com.example.notecomposeapp
+package com.example.notecomposeapp.feature_note.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.notecomposeapp.ui.theme.NoteComposeAppTheme
+import com.example.notecomposeapp.feature_note.presentation.ui.theme.NoteComposeAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
